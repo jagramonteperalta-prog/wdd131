@@ -49,6 +49,15 @@ header  h1 {
     list-style: none;
 }
 
+nav {
+    display: flex;
+}
+
+nav a:hover {
+    background-color: #3c096c;
+    color: white;
+}
+
 .navigation.open {
     display: block;
     position: absolute;
