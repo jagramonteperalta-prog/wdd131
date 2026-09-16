@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: "Open Sans", sans-serif;
+     font-weight: 500;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+
+h1 {
+    font-weight: 100;
+    text-align: center;
+}
+
+header, footer {
+   background-color: #3c096c;
+   color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+}
+
+header  h1 {
+    font-size: 1.3rem;
+}
+
+#menu {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+}
+
+.navigation.open {
+    display: block;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    background-color: #3c096c;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 0.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+figcaption {
+    color: #3c096c;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+}
+
+footer {
+    padding: 0.55rem;
+    text-align: center;
+    font-size: 0.6rem;
+}
