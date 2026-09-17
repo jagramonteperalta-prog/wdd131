@@ -40,6 +40,10 @@ header  h1 {
     font-size: 2rem;
 }
 
+#menu.open::before {
+    content: "✖"
+}
+
 #menu::before {
     content: "☰";
 }
