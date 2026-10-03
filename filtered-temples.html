@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this website, you will be able to learn more about the temples around the world">
+    <meta name="author" content="John Agramonte">
+    <title>Temple Album Website</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/large-filtered-temples.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
+            </ul>
+            <button 
+            id="menu" 
+            type="button"
+            aria-label="Toggle navigation Menu"
+            aria-expanded="false">
+            </button>
+            <ul class="links">
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="temples"></div>
+    </main>
+    <footer>
+         <p>© <span id="currentyear"></span> John Agramonte</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>

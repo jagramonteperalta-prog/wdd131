@@ -1,0 +1,50 @@
+#temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#temples img {
+       display: block;
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        height: auto;
+        object-fit: cover;
+        margin-top: auto;
+        padding-top: 1rem;
+        box-shadow: 0 4px 12px #0005;
+    }
+
+
+@media screen and (min-width: 700px) {
+    #menu {
+        display: none;
+
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.6rem;
+    }
+
+
+    .navigation a {
+        padding: 0;
+    }
+
+    main {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+
+    #temples {
+       grid-column: 1 / -1;
+       grid-template-columns: repeat(3, 250px);
+       justify-content: center;
+       gap: 1.5rem;
+       width: 100%;
+    }
+}
