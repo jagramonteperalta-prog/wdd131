@@ -14,6 +14,15 @@ header {
     padding: 1rem;
 }
 
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    line-height: 1.4;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
@@ -198,4 +207,41 @@ footer {
     object-fit: cover;
     display: block;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 639px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header p {
+        margin: 0.5rem 0 0;
+        line-height: 1.4;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    #menu {
+        margin: 0.5rem auto 0;
+    }
+
+    .hero h2 {
+        top: 35%;
+        font-size: 1.6rem;
+        width: 90%;
+    }
+
+    .hero p {
+        top: 55%;
+        width: 85%;
+        line-height: 1.4;
+    }
 }
