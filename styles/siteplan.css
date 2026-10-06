@@ -234,13 +234,13 @@ footer {
     }
 
     .hero h2 {
-        top: 35%;
+        top: 30%;
         font-size: 1.6rem;
         width: 90%;
     }
 
     .hero p {
-        top: 55%;
+        top: 50%;
         width: 85%;
         line-height: 1.4;
     }
