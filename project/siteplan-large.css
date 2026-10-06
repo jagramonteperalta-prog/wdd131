@@ -1,0 +1,45 @@
+@media screen and (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .places {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .places > h2 {
+        grid-column: 1 / -1;
+    }
+
+    .places article {
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+header {
+    background-color: #003893;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: none;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #CE1126;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hero p {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    max-width: 90%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#menu {
+    display: block;
+    margin: 1rem auto;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.welcome {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.welcome h2 {
+    color: #003893;
+}
+
+.welcome p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.explore {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #CE1126;
+}
+
+.card h3 {
+    color: #003893;
+    font-size: 1.4rem;
+}
+
+footer {
+    background-color: #003893;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.card h3 a {
+    color: #003893;
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    color: #CE1126;
+}
+
+.page-intro {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.page-intro h2 {
+    color: #003893;
+}
+
+.page-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.places {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.places h2 {
+    text-align: center;
+    color: #003893;
+}
+
+.places article {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-top: 4px solid #CE1126;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.places article h3 {
+    color: #003893;
+    font-size: 1.4rem;
+}
+
+.places article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
