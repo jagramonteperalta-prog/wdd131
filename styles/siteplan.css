@@ -233,6 +233,11 @@ footer {
         margin: 0.5rem auto 0;
     }
 
+       .hero img {
+        height: 300px;
+        object-fit: cover;
+    }
+
     .hero h2 {
         top: 30%;
         font-size: 1.6rem;
