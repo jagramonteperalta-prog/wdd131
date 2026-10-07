@@ -88,11 +88,18 @@ header p {
 }
 
 #menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     display: block;
     margin: 1rem 1rem 0 auto;
+    background: transparent;
+    color: white;
     width: 40px;
     height: 40px;
     font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 6px;
 }
 
 #menu::before {
@@ -211,6 +218,7 @@ footer {
 
 @media screen and (max-width: 639px) {
     header {
+        position: relative;
         display: flex;
         flex-direction: column;
         text-align: center;
