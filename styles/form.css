@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background-color: #f1f4f8;
+}
+
+header {
+    background-color: #183153;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h2 {
+    text-align: center;
+    color: #183153;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.35rem;
+    border: 1px solid #aab4c0;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+fieldset {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    border: 1px solid #aab4c0;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.4rem;
+}
+
+fieldset label {
+    font-weight: normal;
+    margin-top: 0.65rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.4rem;
+    accent-color: #2459a9;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #2459a9;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #183153;
+}
+
+button:focus-visible {
+    outline: 3px solid #183153;
+    outline-offset: 3px;
+}
+
+footer {
+    padding: 1.25rem;
+    background-color: #183153;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    form {
+        padding: 2rem;
+    }
+
+    fieldset label {
+        display: inline-block;
+        margin-right: 0.75rem;
+    }
+}

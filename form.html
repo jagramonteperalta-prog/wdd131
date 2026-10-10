@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="John Agramonte">
+    <meta name="description" content="A form for submitting product reviews.">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <h2>Product Review</h2>
+
+        <form method="get" action="review.html">
+        <select id="product-name" name="product-name" required>
+            <option value="" selected disabled>Select a product</option>
+        </select>
+
+        <fieldset>
+            <legend>Overall Rating</legend>
+
+            <label>
+            <input type="radio" name="rating" value="1" required> 1 - Poor
+        </label>
+
+        <label>
+            <input type="radio" name="rating" value="2"> 2 - Fair
+        </label>
+
+        <label>
+            <input type="radio" name="rating" value="3"> 3 - Average
+        </label>
+
+        <label>
+            <input type="radio" name="rating" value="4"> 4 - Good
+        </label>
+
+        <label>
+            <input type="radio" name="rating" value="5"> 5 - Excellent
+        </label>
+        </fieldset>
+
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install-date" required>
+
+        <fieldset>
+            <legend>Useful Features (Check all that apply)</legend>
+
+            <label>
+                <input type="checkbox" name="features" value="features" value="durability"> Durability
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="features" value="ease-of-use"> Ease of Use
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="features" value="performance"> Performance
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="features" value="design"> Design
+            </label>
+        </fieldset>
+
+        <label for="review-title">Review Title (Optional):</label>
+        <input type="text" id="review-title" name="review-title">
+
+        <label for="review-content">Written Review:(Optional)</label>
+        <textarea id="review-content" name="review-content"></textarea>
+
+        <label for="username">Your Name (Optional):</label>
+        <input type="text" id="username" name="username">
+
+        <button type="submit">Submit Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Product Review Form. All rights reserved.</p>
+    </footer>
+</body>
+</html>
