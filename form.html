@@ -19,6 +19,8 @@
         <h2>Product Review</h2>
 
         <form method="get" action="review.html">
+
+        <label for="product-name">Product Name:</label>
         <select id="product-name" name="product-name" required>
             <option value="" selected disabled>Select a product</option>
         </select>
@@ -27,46 +29,46 @@
             <legend>Overall Rating</legend>
 
             <label>
-            <input type="radio" name="rating" value="1" required> 1 - Poor
+            <input type="radio" id="rating-1" name="rating" value="1" required> 1 - Poor
         </label>
 
         <label>
-            <input type="radio" name="rating" value="2"> 2 - Fair
+            <input type="radio" id="rating-2" name="rating" value="2"> 2 - Fair
         </label>
 
         <label>
-            <input type="radio" name="rating" value="3"> 3 - Average
+            <input type="radio" id="rating-3" name="rating" value="3"> 3 - Average
         </label>
 
         <label>
-            <input type="radio" name="rating" value="4"> 4 - Good
+            <input type="radio" id="rating-4" name="rating" value="4"> 4 - Good
         </label>
 
         <label>
-            <input type="radio" name="rating" value="5"> 5 - Excellent
+            <input type="radio" id="rating-5" name="rating" value="5"> 5 - Excellent
         </label>
         </fieldset>
 
-        <label for="install-date">Date of Installation:</label>
+        <label for="install-date">Date of Installation</label>
         <input type="date" id="install-date" name="install-date" required>
 
         <fieldset>
             <legend>Useful Features (Check all that apply)</legend>
 
             <label>
-                <input type="checkbox" name="features" value="features" value="durability"> Durability
+                <input type="checkbox" name="features" value="durability"> Durability
             </label>
 
             <label>
-                <input type="checkbox" name="features" value="features" value="ease-of-use"> Ease of Use
+                <input type="checkbox" name="features" value="ease-of-use"> Ease of Use
             </label>
 
             <label>
-                <input type="checkbox" name="features" value="features" value="performance"> Performance
+                <input type="checkbox" name="features" value="performance"> Performance
             </label>
 
             <label>
-                <input type="checkbox" name="features" value="features" value="design"> Design
+                <input type="checkbox" name="features" value="design"> Design
             </label>
         </fieldset>
 
